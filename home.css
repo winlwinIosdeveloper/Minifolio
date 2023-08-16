@@ -281,13 +281,11 @@ main .btn-arrow {
 #get_in_touch_section {
     padding-top: 16%;
     padding-bottom: 7%;
-    gap: 0;
-}
-
-#get_in_touch_section {
     display: flex;
     gap: 5%;
 }
+
+
 
 
 .btn-arrow-1 {
@@ -415,4 +413,116 @@ footer a:hover {
         -2px -3px 10px white;
         transition: all 0.2s;
 
+}
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 782px) {
+
+    /* utility */
+    .box-layout {
+        padding: 10 20px;
+    }
+    .detail_list {
+        gap: 10%;
+    }
+
+    .detail_lists {
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 1.5%;
+        column-gap: 3%;
+    }
+
+    .xbig_icon_size {
+        font-size: 5rem;
+    }
+    
+    /* navigation*/
+    nav {
+        padding: 3.5% 0;
+    }
+    nav div {
+        padding: 2.5% 2.5%;
+    }
+
+    /* work section , resume sectin*/
+    #work_section, 
+    #resume_section {
+        padding: 15% 10%;
+        gap: 20px;
+    }
+
+    /* email section , blog section */
+    #email_section, 
+    #blog_section {
+        padding: 20% 10% 10% 10%;
+    }
+
+    /* get in touch section */
+    #get_in_touch_section {
+        padding-top: 10%;
+        gap: 10px;
+    }
+
+    #get_in_touch_section h1 {
+        margin-top: 0;
+
+    }
+
+    /* footer */
+    footer {
+        margin-top: 15%;
+    }
+
+
+    /* relayout grids*/
+    #about_section, 
+    #subscribe_section, 
+    #get_in_touch_section,
+    #what_i_do_section {
+        
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+        padding-bottom: 4%;
+    }
+
+    #work_section, 
+    #email_section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #blog_section,
+    #resume_section {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    /* ship position */
+    #about_section {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #work_section, #resume_section {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #what_i_do_section {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #subscribe_section {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    
 }
