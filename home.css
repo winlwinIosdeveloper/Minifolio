@@ -11,6 +11,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 
@@ -50,6 +51,12 @@ body {
     border-radius: 30px;
     padding: 0 30px 0 30px;
     background-color: var(--background-color);
+}
+
+
+.inline_block_link {
+    display: inline;
+    margin-top: 10%;
 }
 
 
@@ -425,7 +432,7 @@ footer a:hover {
 
     /* utility */
     .box-layout {
-        padding: 10 20px;
+        padding: 10px 20px;
     }
     .detail_list {
         gap: 10%;
@@ -524,5 +531,169 @@ footer a:hover {
         grid-row-end: 5;
     }
 
+    
+}
+
+@media (max-width: 375px) {
+
+    body {
+        max-width: 90%;
+    }
+
+    .gradient-title-color {
+        font-size: 2.25rem;
+    }
+
+    .box-layout {
+        padding: 0;
+    }
+
+    .xbig_icon_size {
+        font-size: 4rem;
+    }
+
+    nav {
+        margin-top: 8%;
+        margin-bottom: 10%;
+        margin-inline: 3%;
+    }
+    nav div {
+        padding: 5% 5%;
+    }
+
+    .detail_lists {
+        column-gap: 5%;
+    }
+
+    
+
+    .detail_list {
+        gap: 5%;
+    }
+    
+    /*about section */
+    #about_section h1 {
+        font-size: xx-large;
+    }
+
+    #about_section .image_circle {
+        margin-bottom: 30px;
+    }
+
+    #about_section {
+        padding: 10% 5% 5% 5%;
+    }
+
+    #about_section .detail_list_footer {
+        font-size: 0.75rem;
+        letter-spacing: 3%;
+    }
+
+    /* work and resume section */
+    #work_section,
+    #resume_section {
+        padding-top: 30%;
+        gap: 20px;
+    }
+
+    #work_section h1,
+    #resume_section h1 {
+        font-size: 2rem;
+    }
+
+    /* what i do section */
+    #what_i_do_section {
+        padding: 15% 5% 5% 5%;
+        gap: 30px;
+    }
+    #what_i_do_section .what_i_do_lists{
+       max-width: 100%;
+    }
+
+    #what_i_do_section .btn-arrow {
+        margin-left: auto;
+    }
+
+    #what_i_do_section .what_i_do_list {
+        font-size: .6rem;
+        gap: 10px;
+    }
+
+    /* subscribe section*/
+    #subscribe_section {
+        padding-left: 5%;
+    }
+    #subscribe_section form {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+    #subscribe_section input {
+        width: 90%;
+        padding: 5% 0;
+    }
+
+    #subscribe_section button {
+        padding: 5% 8%;
+    }
+
+    
+    /* email and blog section */
+    #email_section,
+    #blog_section {
+        padding: 20% 5%;
+    }
+
+
+    
+    /* get in touch section */
+    
+    #get_in_touch_section {
+        padding: 10% 5% 15% 5%;
+        gap: 5%;
+    }
+    #get_in_touch_section h1 {
+        font-size: 2.5rem;
+    }
+   /* footer */
+    footer {
+        margin-top: 30%;
+    }
+
+    .footer_nav li:first-child {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+
+
+    .footer_nav
+    {
+        flex-wrap: wrap;
+    }
+
+    .footer_nav a {
+        margin-inline: 10px;
+        font-size: 0.8rem;
+
+    }
+
+    .footer_link_icon {
+        gap: 7%;
+    }
+
+    .footer_link_icon li {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer_description {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 15%;
+    }
     
 }
